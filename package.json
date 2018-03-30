@@ -1,0 +1,46 @@
+{
+  "name": "@anandsuresh/smart-log",
+  "version": "1.0.0",
+  "description": "A smart log-agent and log-sinks",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandsuresh/smart-log.git"
+  },
+  "author": "Anand Suresh",
+  "bugs": {
+    "url": "https://github.com/anandsuresh/smart-log/issues"
+  },
+  "homepage": "https://github.com/anandsuresh/smart-log#readme",
+  "engines":{
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "coverage": "NODE_ENV=test istanbul cover -i 'lib/**/*.js' _mocha -- --ui bdd --reporter spec --recursive spec && open coverage/lcov-report/index.html > /dev/null 2>&1",
+    "lint": "standard",
+    "test": "mocha --ui bdd --reporter spec --recursive spec"
+  },
+  "dependencies": {
+    "@anandsuresh/smart-queue": "^1.0.0",
+    "moment": "2.21.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "istanbul": "1.1.0-alpha.1",
+    "mocha": "5.0.5",
+    "sinon": "5.0.0",
+    "standard": "11.0.1"
+  },
+  "standard": {
+    "ignore": [],
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  }
+}
