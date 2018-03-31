@@ -1,6 +1,6 @@
 {
   "name": "@anandsuresh/smart-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A smart log-agent and log-sinks",
   "license": "MIT",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "https://github.com/anandsuresh/smart-log/issues"
   },
   "homepage": "https://github.com/anandsuresh/smart-log#readme",
-  "engines":{
+  "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
