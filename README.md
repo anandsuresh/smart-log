@@ -1,10 +1,12 @@
-![npm (scoped)](https://img.shields.io/npm/v/@anandsuresh/smart-log.svg?style=plastic)
-![node (scoped)](https://img.shields.io/node/v/@anandsuresh/smart-log.svg?style=plastic)
-![Travis](https://img.shields.io/travis/anandsuresh/smart-log.svg?style=plastic)
-![npm](https://img.shields.io/npm/dt/@anandsuresh/smart-log.svg?style=plastic)
-
-
 # smart-log
+
+[![node (scoped)](https://img.shields.io/node/v/@anandsuresh/smart-log.svg?style=plastic)](https://nodejs.org/en/download/)
+[![npm (scoped)](https://img.shields.io/npm/v/@anandsuresh/smart-log.svg?style=plastic)](https://www.npmjs.com/package/@anandsuresh/smart-log)
+[![npm](https://img.shields.io/npm/dt/@anandsuresh/smart-log.svg?style=plastic)](https://www.npmjs.com/package/@anandsuresh/smart-log)
+[![Travis](https://img.shields.io/travis/anandsuresh/smart-log.svg?style=plastic)](https://travis-ci.org/anandsuresh/smart-log)
+[![license](https://img.shields.io/github/license/anandsuresh/smart-log.svg?style=plastic)](LICENSE)
+[![GitHub followers](https://img.shields.io/github/followers/anandsuresh.svg?style=social&label=Follow)](https://github.com/anandsuresh)
+[![Twitter Follow](https://img.shields.io/twitter/follow/anandsuresh.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=anandsuresh)
 
 The smart-log module provides a set of modules to log information to one or more log sinks. It consists of a singleton log agent implemented as a `Readable` object stream and exposes logging/metrics methods. The agent can be piped into one or more `Writable` log sinks including:
 - `ConsoleSink`: writes the `process.stderr`
@@ -96,11 +98,3 @@ The rotating file sink writes JSON-serialized logs to a file that is rotated eve
 ### `SyslogSink`
 
 The syslog sink writes JSON-serialized logs to the specified syslog server. Since the messages are in JSON format, the syslog server MUST use the [Common Event Expression](https://cee.mitre.org) module.
-
-### `PagerDuty` (future work)
-
-The PagerDuty sink will allow log messages to be sent to PagerDuty. This would be useful for messages logged at the `alert` and `emergency` levels.
-
-### `GitHub` (future work)
-
-The GitHub sink will allow logs to be written to GitHub issues, enabling crash-reporting functionality. Should the issue already be open, it would upvote it, making it easy for developers to identity the most critical problems.
