@@ -1,6 +1,6 @@
 {
   "name": "@anandsuresh/smart-log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A smart log-agent and log-sinks",
   "license": "MIT",
   "main": "index.js",
